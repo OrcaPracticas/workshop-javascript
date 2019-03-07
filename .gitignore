@@ -1,0 +1,39 @@
+=======
+
+# System
+.DS_Store
+Icon*
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+package-lock.json
+
+# Yarn Integrity file
+.yarn-integrity
+yarn-error.log
+yarn.lock
+
+# dotenv environment variables file
+.env
+
+# End of https://www.gitignore.io/api/code,node
+
+# build folder
+lib
+.atom
+.idea
+
+#builds & logs
+node_modules
+
+# userinterfaces content
+src/app/userinterfaces/*
+!src/app/userinterfaces/README.md
+
+#eslintFiles
+eslint.test.js
+reports
+eslintResult.json
