@@ -2,21 +2,26 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Action = (props) => {
-    const { title, link } = props;
+    const { text, link } = props;
     return (
         <div className="card-action">
-            <a href={link}>{title}</a>
+            <a
+                className="waves-effect waves-light btn blue darken-1"
+                href={link}
+            >
+                {text}
+            </a>
         </div>
     );
 };
 
 Action.propTypes = {
-    title: PropTypes.string,
+    text: PropTypes.string,
     link: PropTypes.string,
 };
 
 Action.defaultProps = {
-    title: "",
+    text: "",
     link: "/",
 };
 

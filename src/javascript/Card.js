@@ -3,9 +3,9 @@ class Card extends HTMLElement {
         this.innerHTML = `
             <div class="col s2 m4">
                 <div class="card">
-                    <web-poster title="${this.title}" image="${this.image}"></web-poster>
-                    <web-description description="${this.description}"></web-description>
-                    <web-action title="${this.title}" link="${this.link}"></web-action>
+                    <web-poster image="${this.image}"></web-poster>
+                    <web-description title="${this.title}" description="${this.description}"></web-description>
+                    <web-action text="${this.text}" link="${this.link}"></web-action>
                 </div>
             </div>
         `;
