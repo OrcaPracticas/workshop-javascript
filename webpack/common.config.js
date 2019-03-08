@@ -16,6 +16,7 @@ const COMMON_CONFIG = {
     entry: {
         "react-component": PATH.resolve(__dirname, "../src/react-component.js"),
         "web-component": PATH.resolve(__dirname, "../src/web-component.js"),
+        "life-component": PATH.resolve(__dirname, "../src/life-component.js"),
     },
     output: {
         filename: "dist-[name].js",

@@ -1,92 +1,107 @@
 [
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS componentsua.",
         "link": "./",
-        "image": "http://via.placeholder.com/306x229/336e26/FFFFFF/?text=1",
-        "title": "Titulo 1"
+        "image": "http://via.placeholder.com/306x229/336e26/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 2",
-        "image": "http://via.placeholder.com/306x229/f4d05f/FFFFFF/?text=2",
-        "title": "Titulo 2"
+        "image": "http://via.placeholder.com/306x229/f4d05f/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 3",
-        "image": "http://via.placeholder.com/306x229/501c56/FFFFFF/?text=3",
-        "title": "Titulo 3"
+        "image": "http://via.placeholder.com/306x229/501c56/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 4",
-        "image": "http://via.placeholder.com/306x229/81c27d/FFFFFF/?text=4",
-        "title": "Titulo 4"
+        "image": "http://via.placeholder.com/306x229/81c27d/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 5",
-        "image": "http://via.placeholder.com/306x229/3a87cd/FFFFFF/?text=5",
-        "title": "Titulo 5"
+        "image": "http://via.placeholder.com/306x229/3a87cd/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 6",
-        "image": "http://via.placeholder.com/306x229/2f5a0c/FFFFFF/?text=6",
-        "title": "Titulo 6"
+        "image": "http://via.placeholder.com/306x229/2f5a0c/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 7",
-        "image": "http://via.placeholder.com/306x229/dcb4ef/FFFFFF/?text=7",
-        "title": "Titulo 7"
+        "image": "http://via.placeholder.com/306x229/dcb4ef/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 8",
-        "image": "http://via.placeholder.com/306x229/1c61e7/FFFFFF/?text=8",
-        "title": "Titulo 8"
+        "image": "http://via.placeholder.com/306x229/1c61e7/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 9",
-        "image": "http://via.placeholder.com/306x229/3bd59b/FFFFFF/?text=9",
-        "title": "Titulo 9"
+        "image": "http://via.placeholder.com/306x229/3bd59b/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 10",
-        "image": "http://via.placeholder.com/306x229/648ee2/FFFFFF/?text=10",
-        "title": "Titulo 10"
+        "image": "http://via.placeholder.com/306x229/648ee2/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 11",
-        "image": "http://via.placeholder.com/306x229/31871a/FFFFFF/?text=11",
-        "title": "Titulo 11"
+        "image": "http://via.placeholder.com/306x229/31871a/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 12",
-        "image": "http://via.placeholder.com/306x229/a5064b/FFFFFF/?text=12",
-        "title": "Titulo 12"
+        "image": "http://via.placeholder.com/306x229/a5064b/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 13",
-        "image": "http://via.placeholder.com/306x229/98c811/FFFFFF/?text=13",
-        "title": "Titulo 13"
+        "image": "http://via.placeholder.com/306x229/98c811/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 14",
-        "image": "http://via.placeholder.com/306x229/8ccfda/FFFFFF/?text=14",
-        "title": "Titulo 14"
+        "image": "http://via.placeholder.com/306x229/8ccfda/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     },
     {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "This text, is an example text for this presentation of JS components",
         "link": "Link 15",
-        "image": "http://via.placeholder.com/306x229/ccdb7a/FFFFFF/?text=15",
-        "title": "Titulo 15"
+        "image": "http://via.placeholder.com/306x229/ccdb7a/FFFFFF/?text=",
+        "title": "This is a title",
+        "text": "View More"
     }
 ]

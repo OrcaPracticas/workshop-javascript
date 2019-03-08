@@ -3,9 +3,9 @@ class Card extends HTMLElement {
         this.innerHTML = `
             <div class="col s2 m4">
                 <div class="card">
-                    <web-poster title="${this.title}" image="${this.image}"></web-poster>
-                    <web-description description="${this.description}"></web-description>
-                    <web-action title="${this.title}" link="${this.link}"></web-action>
+                    <web-thumbnail image="${this.image}"></web-thumbnail>
+                    <web-caption title="${this.title}" description="${this.description}"></web-caption>
+                    <web-action text="${this.text}" link="${this.link}"></web-action>
                 </div>
             </div>
         `;
@@ -27,6 +27,10 @@ class Card extends HTMLElement {
         this.setAttribute("title", newValue);
     }
 
+    set text(newValue) {
+        this.setAttribute("text", newValue);
+    }
+
 
     get description() {
         return this.getAttribute("description") || "";
@@ -42,6 +46,10 @@ class Card extends HTMLElement {
 
     get title() {
         return this.getAttribute("title") || "";
+    }
+
+    get text() {
+        return this.getAttribute("text") || "";
     }
 
     disconnectedCallback() {
