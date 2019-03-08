@@ -10,3 +10,17 @@ custom-square {
     display: block;
     margin-top: 50px;
 }
+
+.demo {
+    text-align: center;
+}
+
+.img-demo {
+    width: 70%;
+}
+
+.title-demo {
+    font-size: 2.2rem;
+    color: white;
+    text-align: center;
+}
