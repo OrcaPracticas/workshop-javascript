@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Action, Description, Poster } from ".";
+import { Action, Caption, Thumbnail } from ".";
 
 const Card = (props) => {
     const {
@@ -11,8 +11,8 @@ const Card = (props) => {
     return (
         <div className="col s2 m4">
             <div className="card">
-                <Poster image={`${image}React`} />
-                <Description description={description} title={title} />
+                <Thumbnail image={`${image}React`} />
+                <Caption description={description} title={title} />
                 <Action text={text} link={link} />
             </div>
         </div>

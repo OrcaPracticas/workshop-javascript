@@ -1,11 +1,11 @@
-import Description from "./Description";
+import Caption from "./Caption";
 import Action from "./Action";
 import Card from "./Card";
-import Poster from "./Poster";
+import Thumbnail from "./Thumbnail";
 
 export {
-    Description,
+    Caption,
     Action,
     Card,
-    Poster,
+    Thumbnail,
 };

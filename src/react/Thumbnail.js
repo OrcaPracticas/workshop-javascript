@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Poster = (props) => {
+const Thumbnail = (props) => {
     const { image } = props;
     return (
         <div className="card-image">
@@ -10,8 +10,8 @@ const Poster = (props) => {
     );
 };
 
-Poster.propTypes = {
+Thumbnail.propTypes = {
     image: PropTypes.string.isRequired,
 };
 
-export default Poster;
+export default Thumbnail;

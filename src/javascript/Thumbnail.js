@@ -1,4 +1,4 @@
-class Poster extends HTMLElement {
+class Thumbnail extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <div class="card-image">
@@ -14,4 +14,4 @@ class Poster extends HTMLElement {
     }
 }
 
-export default Poster;
+export default Thumbnail;

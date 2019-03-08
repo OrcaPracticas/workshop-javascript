@@ -1,4 +1,4 @@
-class Description extends HTMLElement {
+class Caption extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <div class="card-content">
@@ -19,4 +19,4 @@ class Description extends HTMLElement {
     }
 }
 
-export default Description;
+export default Caption;

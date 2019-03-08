@@ -121,6 +121,18 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst TEMPLATE = document.cre
 
 /***/ }),
 
+/***/ "./src/javascript/Caption.js":
+/*!***********************************!*\
+  !*** ./src/javascript/Caption.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nclass Caption extends HTMLElement {\n    connectedCallback() {\n        this.innerHTML = `\n            <div class=\"card-content\">\n            <span class=\"card-title\">${this.title}</span>\n                <p>${this.description}</p>\n            </div>\n        `;\n    }\n\n    get description() {\n        const DESC = this.getAttribute(\"description\");\n        return DESC || \"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\";\n    }\n\n    get title() {\n        const DESC = this.getAttribute(\"title\");\n        return DESC || \"title\";\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Caption);\n\n\n//# sourceURL=webpack:///./src/javascript/Caption.js?");
+
+/***/ }),
+
 /***/ "./src/javascript/Card.js":
 /*!********************************!*\
   !*** ./src/javascript/Card.js ***!
@@ -129,31 +141,19 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst TEMPLATE = document.cre
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nclass Card extends HTMLElement {\n    connectedCallback() {\n        this.innerHTML = `\n            <div class=\"col s2 m4\">\n                <div class=\"card\">\n                    <web-poster image=\"${this.image}\"></web-poster>\n                    <web-description title=\"${this.title}\" description=\"${this.description}\"></web-description>\n                    <web-action text=\"${this.text}\" link=\"${this.link}\"></web-action>\n                </div>\n            </div>\n        `;\n    }\n\n    set description(newValue) {\n        this.setAttribute(\"description\", newValue);\n    }\n\n    set link(newValue) {\n        this.setAttribute(\"link\", newValue);\n    }\n\n    set image(newValue) {\n        this.setAttribute(\"image\", newValue);\n    }\n\n    set title(newValue) {\n        this.setAttribute(\"title\", newValue);\n    }\n\n\n    get description() {\n        return this.getAttribute(\"description\") || \"\";\n    }\n\n    get link() {\n        return this.getAttribute(\"link\") || \"\";\n    }\n\n    get image() {\n        return this.getAttribute(\"image\") || \"\";\n    }\n\n    get title() {\n        return this.getAttribute(\"title\") || \"\";\n    }\n\n    disconnectedCallback() {\n        console.log(\"adios\");\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Card);\n\n\n//# sourceURL=webpack:///./src/javascript/Card.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nclass Card extends HTMLElement {\n    connectedCallback() {\n        this.innerHTML = `\n            <div class=\"col s2 m4\">\n                <div class=\"card\">\n                    <web-thumbnail image=\"${this.image}\"></web-thumbnail>\n                    <web-caption title=\"${this.title}\" description=\"${this.description}\"></web-caption>\n                    <web-action text=\"${this.text}\" link=\"${this.link}\"></web-action>\n                </div>\n            </div>\n        `;\n    }\n\n    set description(newValue) {\n        this.setAttribute(\"description\", newValue);\n    }\n\n    set link(newValue) {\n        this.setAttribute(\"link\", newValue);\n    }\n\n    set image(newValue) {\n        this.setAttribute(\"image\", newValue);\n    }\n\n    set title(newValue) {\n        this.setAttribute(\"title\", newValue);\n    }\n\n    set text(newValue) {\n        this.setAttribute(\"text\", newValue);\n    }\n\n\n    get description() {\n        return this.getAttribute(\"description\") || \"\";\n    }\n\n    get link() {\n        return this.getAttribute(\"link\") || \"\";\n    }\n\n    get image() {\n        return this.getAttribute(\"image\") || \"\";\n    }\n\n    get title() {\n        return this.getAttribute(\"title\") || \"\";\n    }\n\n    get text() {\n        return this.getAttribute(\"text\") || \"\";\n    }\n\n    disconnectedCallback() {\n        console.log(\"adios\");\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Card);\n\n\n//# sourceURL=webpack:///./src/javascript/Card.js?");
 
 /***/ }),
 
-/***/ "./src/javascript/Description.js":
-/*!***************************************!*\
-  !*** ./src/javascript/Description.js ***!
-  \***************************************/
+/***/ "./src/javascript/Thumbnail.js":
+/*!*************************************!*\
+  !*** ./src/javascript/Thumbnail.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nclass Description extends HTMLElement {\n    connectedCallback() {\n        this.innerHTML = `\n            <div class=\"card-content\">\n            <span class=\"card-title\">${this.title}</span>\n                <p>${this.description}</p>\n            </div>\n        `;\n    }\n\n    get description() {\n        const DESC = this.getAttribute(\"description\");\n        return DESC || \"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\";\n    }\n\n    get title() {\n        const DESC = this.getAttribute(\"title\");\n        return DESC || \"title\";\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Description);\n\n\n//# sourceURL=webpack:///./src/javascript/Description.js?");
-
-/***/ }),
-
-/***/ "./src/javascript/Poster.js":
-/*!**********************************!*\
-  !*** ./src/javascript/Poster.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nclass Poster extends HTMLElement {\n    connectedCallback() {\n        this.innerHTML = `\n            <div class=\"card-image\">\n                <img alt=\"demo\" src=${this.image} />\n            </div>\n        `;\n    }\n\n    get image() {\n        let src = this.getAttribute(\"image\") || \"http://via.placeholder.com/306x229/c0c0c0/000000/?text=placeholder\";\n        src += src.includes(\"=placeholder\") ? \"\" : \"javacript\";\n        return src;\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Poster);\n\n\n//# sourceURL=webpack:///./src/javascript/Poster.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nclass Thumbnail extends HTMLElement {\n    connectedCallback() {\n        this.innerHTML = `\n            <div class=\"card-image\">\n                <img alt=\"demo\" src=${this.image} />\n            </div>\n        `;\n    }\n\n    get image() {\n        let src = this.getAttribute(\"image\") || \"http://via.placeholder.com/306x229/c0c0c0/000000/?text=placeholder\";\n        src += src.includes(\"=placeholder\") ? \"\" : \"javacript\";\n        return src;\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Thumbnail);\n\n\n//# sourceURL=webpack:///./src/javascript/Thumbnail.js?");
 
 /***/ }),
 
@@ -161,11 +161,11 @@ eval("__webpack_require__.r(__webpack_exports__);\nclass Poster extends HTMLElem
 /*!*********************************!*\
   !*** ./src/javascript/index.js ***!
   \*********************************/
-/*! exports provided: Description, Action, Card, Poster */
+/*! exports provided: Caption, Action, Card, Thumbnail */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Description__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Description */ \"./src/javascript/Description.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Description\", function() { return _Description__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n/* harmony import */ var _Action__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Action */ \"./src/javascript/Action.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Action\", function() { return _Action__WEBPACK_IMPORTED_MODULE_1__[\"default\"]; });\n\n/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card */ \"./src/javascript/Card.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Card\", function() { return _Card__WEBPACK_IMPORTED_MODULE_2__[\"default\"]; });\n\n/* harmony import */ var _Poster__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Poster */ \"./src/javascript/Poster.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Poster\", function() { return _Poster__WEBPACK_IMPORTED_MODULE_3__[\"default\"]; });\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/javascript/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Caption__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Caption */ \"./src/javascript/Caption.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Caption\", function() { return _Caption__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n/* harmony import */ var _Action__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Action */ \"./src/javascript/Action.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Action\", function() { return _Action__WEBPACK_IMPORTED_MODULE_1__[\"default\"]; });\n\n/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card */ \"./src/javascript/Card.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Card\", function() { return _Card__WEBPACK_IMPORTED_MODULE_2__[\"default\"]; });\n\n/* harmony import */ var _Thumbnail__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Thumbnail */ \"./src/javascript/Thumbnail.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Thumbnail\", function() { return _Thumbnail__WEBPACK_IMPORTED_MODULE_3__[\"default\"]; });\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/javascript/index.js?");
 
 /***/ }),
 

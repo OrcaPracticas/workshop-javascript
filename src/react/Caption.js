@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Description = (props) => {
+const Caption = (props) => {
     const { description, title } = props;
     return (
         <div className="card-content">
@@ -11,9 +11,9 @@ const Description = (props) => {
     );
 };
 
-Description.propTypes = {
+Caption.propTypes = {
     description: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
 };
 
-export default Description;
+export default Caption;

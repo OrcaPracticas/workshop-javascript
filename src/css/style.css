@@ -5,3 +5,8 @@ web-action {
     position: relative;
     padding: 16px 24px;
 }
+
+custom-square {
+    display: block;
+    margin-top: 50px;
+}

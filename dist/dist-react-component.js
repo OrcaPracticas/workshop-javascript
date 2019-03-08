@@ -360,6 +360,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 
 /***/ }),
 
+/***/ "./src/react/Caption.js":
+/*!******************************!*\
+  !*** ./src/react/Caption.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Caption = function Caption(props) {\n    var description = props.description,\n        title = props.title;\n\n    return _react2.default.createElement(\n        \"div\",\n        { className: \"card-content\" },\n        _react2.default.createElement(\n            \"span\",\n            { className: \"card-title\" },\n            title\n        ),\n        _react2.default.createElement(\n            \"p\",\n            null,\n            description\n        )\n    );\n};\n\nCaption.propTypes = {\n    description: _propTypes2.default.string.isRequired,\n    title: _propTypes2.default.string.isRequired\n};\n\nexports.default = Caption;\n\n//# sourceURL=webpack:///./src/react/Caption.js?");
+
+/***/ }),
+
 /***/ "./src/react/Card.js":
 /*!***************************!*\
   !*** ./src/react/Card.js ***!
@@ -368,31 +380,19 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _ = __webpack_require__(/*! . */ \"./src/react/index.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Card = function Card(props) {\n    var image = props.image,\n        title = props.title,\n        text = props.text,\n        description = props.description,\n        link = props.link;\n\n\n    return _react2.default.createElement(\n        \"div\",\n        { className: \"col s2 m4\" },\n        _react2.default.createElement(\n            \"div\",\n            { className: \"card\" },\n            _react2.default.createElement(_.Poster, { image: image + \"React\" }),\n            _react2.default.createElement(_.Description, { description: description, title: title }),\n            _react2.default.createElement(_.Action, { text: text, link: link })\n        )\n    );\n};\n\nCard.propTypes = {\n    image: _propTypes2.default.string,\n    title: _propTypes2.default.string,\n    description: _propTypes2.default.string,\n    link: _propTypes2.default.string,\n    text: _propTypes2.default.string\n};\n\nCard.defaultProps = {\n    image: \"http://via.placeholder.com/306x229/c0c0c0/000000/?text=placeholder\",\n    title: \"Title\",\n    description: \"\",\n    link: \"/\",\n    text: \"View More\"\n};\n\nexports.default = Card;\n\n//# sourceURL=webpack:///./src/react/Card.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _ = __webpack_require__(/*! . */ \"./src/react/index.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Card = function Card(props) {\n    var image = props.image,\n        title = props.title,\n        text = props.text,\n        description = props.description,\n        link = props.link;\n\n\n    return _react2.default.createElement(\n        \"div\",\n        { className: \"col s2 m4\" },\n        _react2.default.createElement(\n            \"div\",\n            { className: \"card\" },\n            _react2.default.createElement(_.Thumbnail, { image: image + \"React\" }),\n            _react2.default.createElement(_.Caption, { description: description, title: title }),\n            _react2.default.createElement(_.Action, { text: text, link: link })\n        )\n    );\n};\n\nCard.propTypes = {\n    image: _propTypes2.default.string,\n    title: _propTypes2.default.string,\n    description: _propTypes2.default.string,\n    link: _propTypes2.default.string,\n    text: _propTypes2.default.string\n};\n\nCard.defaultProps = {\n    image: \"http://via.placeholder.com/306x229/c0c0c0/000000/?text=placeholder\",\n    title: \"Title\",\n    description: \"\",\n    link: \"/\",\n    text: \"View More\"\n};\n\nexports.default = Card;\n\n//# sourceURL=webpack:///./src/react/Card.js?");
 
 /***/ }),
 
-/***/ "./src/react/Description.js":
-/*!**********************************!*\
-  !*** ./src/react/Description.js ***!
-  \**********************************/
+/***/ "./src/react/Thumbnail.js":
+/*!********************************!*\
+  !*** ./src/react/Thumbnail.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Description = function Description(props) {\n    var description = props.description,\n        title = props.title;\n\n    return _react2.default.createElement(\n        \"div\",\n        { className: \"card-content\" },\n        _react2.default.createElement(\n            \"span\",\n            { className: \"card-title\" },\n            title\n        ),\n        _react2.default.createElement(\n            \"p\",\n            null,\n            description\n        )\n    );\n};\n\nDescription.propTypes = {\n    description: _propTypes2.default.string.isRequired,\n    title: _propTypes2.default.string.isRequired\n};\n\nexports.default = Description;\n\n//# sourceURL=webpack:///./src/react/Description.js?");
-
-/***/ }),
-
-/***/ "./src/react/Poster.js":
-/*!*****************************!*\
-  !*** ./src/react/Poster.js ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Poster = function Poster(props) {\n    var image = props.image;\n\n    return _react2.default.createElement(\n        \"div\",\n        { className: \"card-image\" },\n        _react2.default.createElement(\"img\", { alt: \"demo\", src: image })\n    );\n};\n\nPoster.propTypes = {\n    image: _propTypes2.default.string.isRequired\n};\n\nexports.default = Poster;\n\n//# sourceURL=webpack:///./src/react/Poster.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Thumbnail = function Thumbnail(props) {\n    var image = props.image;\n\n    return _react2.default.createElement(\n        \"div\",\n        { className: \"card-image\" },\n        _react2.default.createElement(\"img\", { alt: \"demo\", src: image })\n    );\n};\n\nThumbnail.propTypes = {\n    image: _propTypes2.default.string.isRequired\n};\n\nexports.default = Thumbnail;\n\n//# sourceURL=webpack:///./src/react/Thumbnail.js?");
 
 /***/ }),
 
@@ -404,7 +404,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.Poster = exports.Card = exports.Action = exports.Description = undefined;\n\nvar _Description = __webpack_require__(/*! ./Description */ \"./src/react/Description.js\");\n\nvar _Description2 = _interopRequireDefault(_Description);\n\nvar _Action = __webpack_require__(/*! ./Action */ \"./src/react/Action.js\");\n\nvar _Action2 = _interopRequireDefault(_Action);\n\nvar _Card = __webpack_require__(/*! ./Card */ \"./src/react/Card.js\");\n\nvar _Card2 = _interopRequireDefault(_Card);\n\nvar _Poster = __webpack_require__(/*! ./Poster */ \"./src/react/Poster.js\");\n\nvar _Poster2 = _interopRequireDefault(_Poster);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.Description = _Description2.default;\nexports.Action = _Action2.default;\nexports.Card = _Card2.default;\nexports.Poster = _Poster2.default;\n\n//# sourceURL=webpack:///./src/react/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.Thumbnail = exports.Card = exports.Action = exports.Caption = undefined;\n\nvar _Caption = __webpack_require__(/*! ./Caption */ \"./src/react/Caption.js\");\n\nvar _Caption2 = _interopRequireDefault(_Caption);\n\nvar _Action = __webpack_require__(/*! ./Action */ \"./src/react/Action.js\");\n\nvar _Action2 = _interopRequireDefault(_Action);\n\nvar _Card = __webpack_require__(/*! ./Card */ \"./src/react/Card.js\");\n\nvar _Card2 = _interopRequireDefault(_Card);\n\nvar _Thumbnail = __webpack_require__(/*! ./Thumbnail */ \"./src/react/Thumbnail.js\");\n\nvar _Thumbnail2 = _interopRequireDefault(_Thumbnail);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.Caption = _Caption2.default;\nexports.Action = _Action2.default;\nexports.Card = _Card2.default;\nexports.Thumbnail = _Thumbnail2.default;\n\n//# sourceURL=webpack:///./src/react/index.js?");
 
 /***/ })
 
